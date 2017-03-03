@@ -6,19 +6,22 @@
 
 
 class Song {
-private:
+protected:
 	std::string mytitle;
 	std::string myartist;
-	std::string mygenre;
+	
+
 public:
+	std::string mygenre;
+
 	bool isOfGenre(std::string genre);
 	Song(std::string title, std::string artist, std::string genre);
-	}
+	
 	Song();
-	std::string getTitle();
-	std::string getArtist();
-	std::string getGenre();
-
+	std::string getTitle () const;
+	std::string getArtist() const;
+	std::string getGenre() const;
+	
 }; 
 #endif
 #pragma once
