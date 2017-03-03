@@ -21,7 +21,7 @@ int main()
 		Song("Elvis Presley Blues", "Gillian Welch", "Americana"),
 		Song("Pirate's Gospel", "Alela Diane", "Americana"),
 		Song("Come On Up To The House", "Sarah Jarosz", "Americana")
-	};
+ };
 
 	// Make the playlist
 	Playlist playlist("iRandomMusic");
@@ -60,7 +60,11 @@ int main()
 
 	if (errors == 0) cout << "Passed\n";
 	else cout << "Errors: " << errors << endl;
+	int one;
+	cout << "Press 1, then press enter to exit." << endl;
+	cin >> one;
 
 	return errors;
 
 }
+
